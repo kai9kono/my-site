@@ -4,22 +4,33 @@
     box-sizing: border-box;
 }
 
-.header-style {
+header {
     background-color: #ff9a4b;
     height: 50px;
+}
+
+body {
+    display: block;
+}
+
+main {
+    width: 960px;
     display: flex;
+    margin: 50px auto;
 }
 
-.main-style {
-    text-align: center;
-}
-
-.step1,.step2,.step3 {
-    margin-top: 50px;
-    margin-bottom: 50px;
+.steps {
+    margin-right: 30px;
+    padding: 10px;
     background-color: #EEEEEE;
     width: 300px;
+    position: relative;
     display: inline-block;
+    text-align: left;
+}
+
+.steps:last-child {
+    margin-right: 0;
 }
 
 .step-number {
@@ -28,10 +39,6 @@
     position: absolute;
     top: 0;
     left: 0;
-}
-
-.step1,.step2 {
-    margin-right: 30px;
 }
 
 .step1-image,.step2-image,.step3-image {
@@ -50,4 +57,14 @@
 
 .step3-image {
     background-image: url("./img/flow03.png");
+}
+
+.title {
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.footer-style {
+    background-color: #aaa;
+    height: 50px;
 }
