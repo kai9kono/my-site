@@ -7,6 +7,7 @@
 header {
     background-color: #ff9a4b;
     height: 50px;
+    width: 100%;
 }
 
 body {
@@ -67,4 +68,24 @@ main {
 .footer-style {
     background-color: #aaa;
     height: 50px;
+}
+
+@media screen and (max-width:768px) {
+    
+    main {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+
+    .steps {
+        width: 90%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .steps:last-child {
+        margin-bottom: 0;
+    }
+
 }
